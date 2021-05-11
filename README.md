@@ -1,7 +1,6 @@
 # Projeto CES-22 BackEnd
 
-Este repositório consiste do código responsável pelo funcionamento do back-end do projeto de CES-22, API REST desenvolvida com Django e Django-rest-framewor
-k.
+Este repositório consiste do código responsável pelo funcionamento do back-end do projeto de CES-22, API REST desenvolvida com Django e Django-rest-framework.
 
 
 ## Estruturação do Projeto
