@@ -72,13 +72,13 @@ Este repositório consiste do código responsável pelo funcionamento do back-en
   ```
 - Criar o DB:
   ```
-  CREATE DATABASE db WITH OWNER ces22;
+  CREATE DATABASE dbces22 WITH OWNER ces22;
   ```
 
 ### Caso seja necessário, recrie o DB
   ```
-  DROP DATABASE db;
-  CREATE DATABASE db WITH OWNER ces22;
+  DROP DATABASE dbces22;
+  CREATE DATABASE dbces22 WITH OWNER ces22;
   ```
 
 ### Rodar a aplicação
