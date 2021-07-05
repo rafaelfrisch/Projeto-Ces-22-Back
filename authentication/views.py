@@ -4,6 +4,10 @@ from .serializers import PacientSerializer
 from .models import Pacient
 from django.contrib.auth.models import User
 
+from rest_framework.authentication import TokenAuthentication
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.decorators import api_view, authentication_classes, permission_classes
+
 class PacientViewSet(viewsets.ViewSet):
     queryset = Pacient.objects.all()
 
@@ -21,3 +25,12 @@ class PacientViewSet(viewsets.ViewSet):
         
         return Response(message, status = status.HTTP_201_CREATED)
 
+@api_view(['GET'])
+@authentication_classes([TokenAuthentication])
+@permission_classes([IsAuthenticated])
+def login(request, format=None):
+    content = {
+        'user': str(request.user),  # `django.contrib.auth.User` instance.
+        'auth': str(request.auth),  # None
+    }
+    return Response(content)
