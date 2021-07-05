@@ -5,6 +5,7 @@ class Doctor(models.Model):
     name = models.CharField(max_length=100)
     def __str__(self):
         return self.name
+        
 class Schedule(models.Model):
     initial_time = models.DateTimeField()
     final_time = models.DateTimeField()
