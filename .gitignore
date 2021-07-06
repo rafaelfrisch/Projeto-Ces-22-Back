@@ -2,6 +2,8 @@
 **/migrations/**
 !**/migrations/__init__.py
 
+/static
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
